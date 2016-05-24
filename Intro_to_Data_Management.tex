@@ -1,0 +1,152 @@
+\documentclass{beamer}
+
+%
+%retrieved from https://www.overleaf.com/latex/templates/beamer-presentation/zxrfltwmbcrt#.Vyig856rSkA 03.05.2016
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\title[Geostatistics]{Introduction to Data Management}
+\author{Sergio Vargas}
+\institute{Dept. Earth \& Environmental Sciences, LMU M\"unchen}
+\date{2016}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
+
+\section{Data management}
+
+\begin{frame}{Things you need}
+\begin{enumerate}
+  \setbeamercovered{transparent=0}
+  \item Spreadsheet:
+    \begin{itemize}
+      \item \textbf{LibreOffice}: Why to use LibreOffice? Ideas.
+      \pause
+      \item \textbf{Always} save your files as comma (or tab) separated value (csv) files. Why?
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Metadata}
+  What is it?
+  \pause
+  Data about data.
+  \begin{enumerate}
+    \item Name and contact information of the person in charge of the study.
+    \item Where were the data collected.
+    \item Study name.
+    \item Funding body.
+    \item Information about the data file:
+  \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Information about the data file:}
+  \begin{itemize}
+    \item Type of experimental unit.
+    \item Methods use to collect the data.
+    \item Units of measurement or observation of each of the variables.
+    \item Abbreviations used in the file.
+    \item Description of what data are in the columns and the rows.
+    \item Character used to separate the columns.
+    \item Character used to separate the rows.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Data storage in the 21th century}
+  Traditional way:
+  
+    \begin{itemize}
+      \item Make a copy of the data and store it somewhere on you computer.
+    \end{itemize}
+ 
+  \pause
+  
+  Problems?
+  
+  \tiny{Data versioning, for example.}
+
+\end{frame}
+
+\begin{frame}{Data versioning: the old way}
+
+  Suppose I have file A and want to modify something.
+  
+  \textbf{Procedure 1}
+
+  \begin{itemize}
+  
+    \item Open file.
+    \item Modify file.
+    \item Save file.
+    \item Close file.
+  
+  \end{itemize}
+
+  Problems?
+  
+\end{frame}
+  
+\begin{frame}{Data versioning: the old way}
+
+  \textbf{Procedure 2}
+  
+  \begin{itemize}
+  
+    \item Duplicate file.
+    \item Rename new/old file.
+    \item Open file.
+    \item Modify file.
+    \item Save file.
+    \item Close file.
+  
+  \end{itemize}
+
+  Problem?
+
+\end{frame}
+
+\begin{frame}{Data versioning: a new way}
+
+  \Large{\textbf {Git}}
+  
+  Git is version control system that is:
+  
+  \begin{itemize}
+  
+    \item distributed
+    \item emphasizes on speed and data integrity
+    \item supports non-linear workflows
+    \item nowadays, is kinda cloud-based
+  
+  \end{itemize}
+  
+  Example:
+
+\end{frame}
+
+\end{document}
