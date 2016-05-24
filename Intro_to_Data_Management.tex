@@ -88,7 +88,7 @@
   
   Problems?
   
-  \tiny{Data versioning, for example.}
+  {\tiny Data versioning, for example.}
 
 \end{frame}
 
@@ -141,15 +141,65 @@
     \item distributed
     \item emphasizes on speed and data integrity
     \item supports non-linear workflows
-    \item nowadays, is ``kinda'' cloud-based
+    \item nowadays, is ``kinda'' cloud-based \newline {\tiny (storage and accesibility is accounted for while you keep a copy of the file on your system)}
   
   \end{itemize}
   
   Example:
 
-    Github
+    \href{https://github.com/sevragorgia/Statistics}{Github}
+    
     BitBucket
     
 \end{frame}
+
+\begin{frame}{Benefits of Git}
+
+  Git is like a super advanced Save-As system. But...
+
+  \pause
+
+\begin{itemize}
+
+  \item Changes done to a file can be tracked back and undo.
+  
+  \pause
+  
+  \item Allows collaboration with other researchers.
+  
+  \pause
+  
+  \item Allows the creation of sandboxes (called branches) to modify copies of files.
+  
+  \pause
+  
+  \item All this, while keeping only one copy of the file (and records of the changes done to it).
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Demo: create a repository for the data used in this practical}
+
+  \begin{enumerate}
+  
+    \item Create a new folder to store the contents of the project.
+    \pause
+    \item Before you add any data or move files or anything, initialize git.
+    \pause
+    \item Initialize git (git init folder\_name).
+    \pause
+    \item Add data and start tracking changes.
+    \pause
+    \item Once you are happy with the results, publish it on e.g. Github.
+    \pause
+    \item Branch the published version of the data to keep working on it while other could potentially work on the published version.
+    \pause
+    \item Merge the changes to the already published version of the data; other users of the data will keep their versions unless they try to compare their version against the newly available one.
+
+ \end{enumerate}
+
+\end{frame}
+
 
 \end{document}
